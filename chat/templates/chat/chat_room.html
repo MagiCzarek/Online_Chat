@@ -1,0 +1,22 @@
+{% extends 'chat/home.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section id="chatroom-name-wrapper">
+            <h1>Id room : <span id="chatroom-name"></span></h1>
+        </section>
+        <section id="video-stream">
+        </section>
+    <section>
+        
+    </section>
+
+    </main>
+
+    <script type = "text/javascript" src="{% static 'agora/AgoraRTC_N-4.11.1.js'%}"></script>
+
+    <script type = "text/javascript" src = "{% static 'js/stream.js'%}"></script>
+
+
+
+{% endblock content %}

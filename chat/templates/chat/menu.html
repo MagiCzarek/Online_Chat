@@ -1,0 +1,33 @@
+{% extends 'chat/home.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section id="form-container">
+
+
+            <img id="logo" src="{% static 'img/chat.png' %}"/>
+
+
+            <div>
+                <h1>Hi this is a simple videochat</h1>
+
+            </div>
+            <form id="form">
+                <div class="form-field">
+                    <input type="submit" value="Join Room">
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        let form = document.getElementById('form')
+
+        let sumbitHandler = async(e)=> {
+            e.preventDefault()
+            window.open('/chat_room/','_self')
+        }
+        form.addEventListener('submit',sumbitHandler)
+    </script>
+{% endblock content %}

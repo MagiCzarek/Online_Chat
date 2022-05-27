@@ -1,0 +1,56 @@
+
+:root {
+    --box_shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2), 0 2px 7px -1px rgba(0, 0, 0, 0.2);
+}
+/* ---- HOME STYLING */
+body {
+    background-color: RGB(223, 207, 190);
+
+
+}
+
+#logo {
+    display: block;
+    width: 200px;
+    /*height: 150px;*/
+    margin: 0 auto;
+}
+
+#form-container {
+    width: 500px;
+    background-color: white;
+    box-shadow: var(--box_shadow);
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---- CHATROOM STYLING*/
+#video-stream{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+
+}
+
+.video-container{
+    flex-basis: 500px;
+    flex-grow:1 ;
+    max-height: 100%;
+    min-height: 400px;
+    border: 0.5px solid rgb(152, 180, 212);
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgba(198,202,219,1);
+
+}
+.video-content-player{
+    height: 100%;
+    width: 100%;
+
+}
