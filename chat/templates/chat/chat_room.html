@@ -7,15 +7,26 @@
         </section>
         <section id="video-stream">
         </section>
-    <section>
-        
-    </section>
+        <section id="controls-wrapper">
+            <div class="img-wrapper">
+                <img class="control-icon" id="video-btn" src="{% static 'img/video.png' %}">
+            </div>
+            <div class="img-wrapper">
+                <img class="control-icon" id="micro-btn" src="{% static 'img/micro.png' %}">
+            </div>
+            <div class="img-wrapper">
+                <img class="control-icon" id="exit-btn" src="{% static 'img/exit.png' %}">
+            </div>
+
+
+
+        </section>
 
     </main>
 
-    <script type = "text/javascript" src="{% static 'agora/AgoraRTC_N-4.11.1.js'%}"></script>
+    <script type="text/javascript" src="{% static 'agora/AgoraRTC_N-4.11.1.js' %}"></script>
 
-    <script type = "text/javascript" src = "{% static 'js/stream.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/stream.js' %}"></script>
 
 
 

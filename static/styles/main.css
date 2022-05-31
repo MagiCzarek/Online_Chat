@@ -28,7 +28,35 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#theme{
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-field{
+    margin: 10px;
+}
+.form-field input{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.form-field input[type='submit']{
+    text-align: center;
+    background-color: lightgrey;
+
+
+}
+
+
+
+
+
+
 /* ---- CHATROOM STYLING*/
+#chatroom-name-wrapper{
+    text-align: center;
+}
 #video-stream{
     display: flex;
     flex-wrap: wrap;
@@ -47,10 +75,57 @@ body {
     border-radius: 5px;
     margin: 2px;
     background-color: rgba(198,202,219,1);
+    position: relative;
 
 }
 .video-content-player{
     height: 100%;
     width: 100%;
+}
+
+.username-wrapper{
+    position: absolute;
+    top:10px;
+    left:10px;
+    z-index: 10000;
+    background-color: black;
+    color: white;
+
+}
+#controls-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    column-gap: 1em;
+
+}
+
+.control-icon{
+    height: 40px;
+    width: 40px;
+    box-shadow: var(--box_shadow);
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+#exit-btn{
+    background-color: #ff726f ;
+}
+#micro-btn{
+    background-color: lightgrey;
+}
+#video-btn{
+    background-color: lightgrey;
+}
+
+
+@media screen and (max-width: 1650px){
+    .video-container{
+        flex-basis: 400px;
+        min-height: 400px;
+    }
 
 }
