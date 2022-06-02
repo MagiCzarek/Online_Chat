@@ -7,6 +7,7 @@ Install the required dependencies by running
 ```
 pip -r requirements.txt
 ```
+In file settings.py you need to add your Django Secret Key
 
 ## App screens:
 ### Room creator
